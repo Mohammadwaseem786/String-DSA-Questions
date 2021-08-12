@@ -13,7 +13,7 @@ Reverse Vowels In A String.
     int i=0,j=n-1;
   while(i<j){
    while(i<j && isvowel(s[i])==false) i++;
-   while(j>0 && isvowel(s[j])==false) j--;
+   while(i<j && isvowel(s[j])==false) j--;
    swap(s[i],s[j]);
    i++,j--;
    }
